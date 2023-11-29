@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+{{!-- começo da navbar --}}
+<section class="sectionPurple" id="sectionTitulo">
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-transparent">
+        <a class="text-3xl font-bold leading-none" href="#">
+            <p class="text-white font-extralight pl-7">NOME DO SITE</p>
+        </a>
+        <div class="">
+            <button class="navbar-burger flex items-center text-white p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <style>
+            .dropdown:focus-within .dropdown-menu {
+                opacity: 1;
+                transform: translate(0) scale(1);
+                visibility: visible;
+            }
+        </style>
+    </nav>
+    <div class="hidden navbar-menu relative z-50">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-black">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="/">
+                    <p class="text-white font-extralight">NOME DO SITE</p>
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul class="text-white font-extralight">
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="/about">Saiba mais</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="/login">Login</a>
+                    </li>
+                    <li class="mb-1">
+                        <button type="button" onclick="navbarDepoimentButton()">
+                            <a class="block p-4 text-sm" href="javascript:void(0)">Depoimentos</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <button type="button" onclick="navbarRoadmapButton()">
+                            <a class="block p-4 text-sm" href="javascript:void(0)">Roadmap</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="" target="_blank">Contate-nos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </nav>
+    </div>
+
+    <script src="scripts/navbar-responsive.js"></script>
+
+    {{!-- fim da navbar --}}
+
+    {{!-- começo do header --}}
+
+
+    <div class="w-full">
+        <div class="relative">
+            <div class="flex flex-col md:flex-row items-start md:items-center">
+                <!-- Adicionei 'items-start md:items-center' para alinhar verticalmente na tela -->
+                <div class="w-full md:w-4/12 px-4 mb-6 md:mb-0 ml-8">
+                    <div id="estorvo" class="flex-col text-white pb-40" style="width: 1000px; ">
+                        <span
+                            class="w-full flex-shrink-0 font-inter text-5xl font-semibold leading-normal bg-gradient-to-r from-purple-600 to-red-500 via-blue-400 bg-clip-text text-transparent">AVANÇOS
+                            TECNOLÓGICOS:</span>
+                        <p id="subtituloPrincipal" class="w-571 text-white font-inter text-3xl font-medium">OS IMPACTOS
+                            NO MERCADO DE TRABALHO</p>
+                    </div>
+                </div>
+                <div class="md:w-6/12 w-4/3 ml-auto">
+                    <div class="">
+                        <img id="imagemPrincipal" src="./imgs/mao.png" alt="" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- final do header --}}
+
+</section>
+<section class="sectionsWhite inline-flex flex-col" id="sectionCards">
+    <div class="pt-20 pb-10">
+        <p class="text-black text-3xl font-semibold">
+            <span
+                class="bg-gradient-to-r from-purple-900 via-pink-500 to-blue-400 text-transparent bg-clip-text text-center text-4xl font-semibold indent-1">
+                REVOLUÇÕES INDUSTRIAIS:
+            </span>
+            <br>
+            Impactos na Produção e no Emprego
+        </p>
+    </div>
+    <div class="slide-container swiper mb-24">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-content" id="box">
+                        <p class="name">1ª REVOLUÇÃO INDUSTRIAL</p>
+                        <p class="sub">1760-1860</p>
+                        <ul class="desc">
+                            <li class="descItens">Inglaterra, Alemanha, França, Holanda, Bélgica, EUA e Rússia;</li>
+                            <li class="descItens">Avanço do setor de transporte e produtivo;</li>
+                            <li class="descItens">Descobrimento do carvão como fonte de energia;</li>
+                            <li class="descItens">James Watt aperfeiçoou a máquina a vapor que foi usada para indústrias
+                                têxtil.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content" id="box1">
+                        <p class="name">2ª REVOLUÇÃO INDUSTRIAL</p>
+                        <p class="sub">1870 -1914</p>
+                        <ul class="desc">
+                            <li class="descItens">Modernizações no mercado;</li>
+                            <li class="descItens"> Descoberta da eletricidade, surgimento de meios de transporte,
+                                melhora nos meios de
+                                comunicação...</li>
+                            <li class="descItens">Ford Motor Company - Henry Ford - criou a primeira linha de montagem
+                                automatizada
+                                com esteiras rolantes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content" id="box2">
+                        <p class="name">3ª REVOLUÇÃO INDUSTRIAL</p>
+                        <p class="sub">1950-Atual</p>
+                        <ul class="desc">
+                            <li class="descItens">Revolução Técnico-Científica e Informacional;</li>
+                            <li class="descItens">Aumento do desemprego;</li>
+                            <li class="descItens">Crescimento do uso da informática.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content" id="box3">
+                        <p class="name">4ª REVOLUÇÃO INDUSTRIAL</p>
+                        <p class="sub">2010-Atual</p>
+                        <ul class="desc">
+                            <li class="descItens">Projeto de indústria do futuro;</li>
+                            <li class="descItens">O fundamento básico é que com máquinas, sistemas e ativos, as empresas
+                                podem ter
+                                sistemas de produção inteligentes e automatizados.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+{{!-- começo do texto 1 --}}
+
+<section class="sectionPurple" id="sectionMoca">
+    <div class="w-full mt-40 py-10">
+        <div class="relative">
+
+            <div class="relative bg-blueGray-50">
+                <div class="inline-flex flex-col-reverse md:flex-row items-center justify-around centraliza">
+                    <div class="w-full md:w-4/12 px-4 mb-6 md:mb-0 pt-11">
+                        <p
+                            class="bg-gradient-to-r from-purple-900 via-pink-500 to-blue-400 text-transparent bg-clip-text text-center text-4xl font-semibold">
+                            AVANÇOS TECNOLÓGICOS
+                        </p>
+                        <p class="pt-20 md:mt-0 leading-relaxed text-white lg:text-2xl font-medium tracking-tighter">
+                            Os avanços tecnológicos nas revoluções industriais revolucionaram a maneira como vivemos
+                            e trabalhamos. Da máquina a vapor à fusão de tecnologias digitais, físicas e biológicas,
+                            testemunhamos uma incrível jornada de inovação. A eletrificação, digitalização e
+                            automação tornaram-se fundamentais, impulsionando a produção em massa e a conectividade
+                            global. A inteligência artificial, nanotecnologia e biotecnologia moldam um futuro
+                            repleto de possibilidades, redefinindo não apenas o cenário econômico e industrial, mas
+                            também nossa relação com o trabalho e a própria noção de progresso.
+                        </p>
+                    </div>
+                    <div class="w-full md:w-5/12">
+                        <div class="max-w-xl">
+                            <img src="./imgs/moca1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{{!-- final do texto 1 --}}
+
+<section class="sectionsWhite" id="sectionMoco">
+
+    <div class="w-full mt-40">
+        <div class="relative">
+            <p class="text-3xl text-bold lg:text-3xl -mt-24 text-center absolute top-0 w-full">
+                VOCÊ JÁ OUVIU FALAR EM
+                <span
+                    class="bg-gradient-to-r from-purple-900 via-pink-500 to-blue-400 text-transparent bg-clip-text text-center text-4xl font-semibold pb-16">
+                    INTELIGÊNCIA ARTIFICIAL?
+                </span>
+            </p>
+
+            <div class="bg-blueGray-50 justify-around items-center centraliza">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 lg:w-2/5 pl-11">
+                        <img alt="" class="max-w-full rounded-lg shadow-lg" src="./imgs/moco.png">
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-3/5">
+                        <div class=" px-24">
+                            <p
+                                class="pt-40 md:mt-0 leading-relaxed text-black lg:text-xl xl:text-2xl font-medium tracking-tighter text-justify">
+                                A Inteligência Artificial (IA) representa um marco revolucionário em nossa jornada
+                                tecnológica. Da automatização de processos à capacidade de aprendizado autônomo, a IA
+                                redefine os limites do possível. Por meio de algoritmos complexos e poder computacional
+                                avançado, a IA capacita máquinas a tomar decisões, analisar dados e até mesmo
+                                compreender padrões complexos. Essa tecnologia impulsiona setores diversos, desde a
+                                medicina até a indústria, transformando a maneira como realizamos tarefas cotidianas e
+                                impulsionamos a inovação. No entanto, seu rápido avanço também levanta questões éticas e
+                                sociais sobre seu impacto no mercado de trabalho e na interação humana. A Inteligência
+                                Artificial, com seu potencial promissor e desafios intrínsecos, é uma peça fundamental
+                                no cenário tecnológico em constante evolução.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- final do texto responsivo --}}
+
+</section>
+<section class="sectionsPurple" id="sectionGrafico">
+
+    {{!-- texto responsivo 2 --}}
+
+    <div class="w-full py-32 mt-40 sectionPurple">
+        <div class="relative">
+            <div class="flex justify-center items-center text-center">
+                <p class="text-white text-4xl font-semibold leading-10 tracking-tight pb-12">
+                    QUAIS SÃO AS
+                    <span
+                        class="text-4xl font-semibold leading-normal bg-gradient-to-r from-pink-600 to-indigo-900 bg-clip-text text-transparent">
+                        PROFISSÕES
+                    </span>
+                    COM MAIOR PROBABILIDADE DE
+                    <span
+                        class="text-4xl font-semibold leading-normal bg-gradient-to-r from-pink-600 to-indigo-900 bg-clip-text text-transparent">
+                        ROBOTIZAÇÃO?
+                    </span>
+                </p>
+            </div>
+            <div class="relative">
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-around">
+                    <div class="w-full md:w-4/12 mb-6 md:mb-0 md:ml-32">
+                        <img src="imgs/grafico.png" alt="" class="max-w-full h-auto pl-20">
+                    </div>
+                    <div class="w-full md:w-5/12 px-4">
+                        <div class="">
+                            <img src="imgs/grafico-dados.png" alt="" class="max-w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- final do texto responsivo 2 --}}
+
+</section>
+<section class="sectionsWhite" id="sectionCard">
+    <p id="tituloCard">O QUE VOCÊ VERÁ NESTA SEÇÃO...</p>
+    <div id="paiCard">
+        <div class="card-card">
+            <div class="cards">
+                <div>
+                    <p class="titleCard">Robótica Avançada</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="titleCard">Heading</p>
+                <p class="titleCard"></p>
+            </div>
+        </div>
+        <div class="card-card">
+            <div class="cards">
+                <p class="titleCard">Uberização</p>
+                <p class="titleCard"></p>
+            </div>
+            <div class="cards">
+                <p class="titleCard">Heading</p>
+                <p class="titleCard"></p>
+            </div>
+        </div>
+        <div class="card-card">
+            <div class="cards">
+                <p class="titleCard">Automação de Processos</p>
+                <p class="titleCard"></p>
+            </div>
+            <div class="cards">
+                <p class="titleCard">Heading</p>
+                <p class="titleCard"></p>
+            </div>
+        </div>
+    </div>
+</section>
+{{!-- <section id="sectionFooter">
+    <div>
+        <div id="divLogoFoot">
+            <div id="logoFoot"></div>
+            <p id="nomeSiteFoot">nome do site</p>
+        </div>
+        <div>
+            <p id="textCopyFoot">Lorem ipsum @ dolor sit amet</p> <!--Copyright-->
+        </div>
+    </div>
+    <div>
+        <p id="titleAgradecimentos">Ktianasjdfk jkas</p><!--Agradecimento  -->
+        <p id="textAgradecimentos">Lorem ipsum dolor sit <br>
+            amet,consectetur jlksçlfg <br>
+            adipisicing
+        </p>
+    </div>
+    <div>
+        <p id="titleLinkFoot">Ktianasjdfk jkas</p> <!--Link para as páginas-->
+        <ul>
+            <li class="textLinkFoot">amet, <br> </li>
+            <li class="textLinkFoot">consectetur <br> </li>
+            <li class="textLinkFoot">jlksçlfg <br> </li>
+            <li class="textLinkFoot">adipisicing <br> </li>
+        </ul>
+    </div>
+    <div>
+        <p id="titleContatos">Ktianasjdfk jkas</p> <!--Contatos-->
+        <p id="textContatos">Lorem ipsum dolor sit <br>
+            amet, consec tetur <br>
+            jlksçlfg adipisicing <br>
+            elit,</p>
+        <img id="imgContatos" src="./imgs/gmail.png" alt="">
+    </div>
+</section> --}}
+{{!--
+<script src="scripts/hover.js"></script> --}}
+<script src="scripts/swiper-bundle.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>

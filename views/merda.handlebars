@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<section class="sectionPurple" id="sectionTitulo">
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-transparent">
+        <a class="text-3xl font-bold leading-none" href="/">
+            <p class="text-white font-extralight pl-7">NOME DO SITE</p>
+        </a>
+        <div class="">
+            <button class="navbar-burger flex items-center text-white p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <style>
+            .dropdown:focus-within .dropdown-menu {
+                opacity: 1;
+                transform: translate(0) scale(1);
+                visibility: visible;
+            }
+        </style>
+    </nav>
+    <div class="hidden navbar-menu relative z-50">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-black">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <p class="text-white font-extralight">NOME DO SITE</p>
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul class="text-white font-extralight">
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="/about">Saiba mais</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="/login">Login</a>
+                    </li>
+                    <li class="mb-1">
+                        <button type="button" onclick="navbarDepoimentButton()">
+                            <a class="block p-4 text-sm" href="javascript:void(0)">Depoimentos</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <button type="button" onclick="navbarRoadmapButton()">
+                            <a class="block p-4 text-sm" href="javascript:void(0)">Roadmap</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm" href="" target="_blank">Contate-nos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </nav>
+    </div>
+
+    <script src="scripts/navbar-responsive.js"></script>
+
+    {{!-- fim da navbar --}}
+
+    {{!-- começo do header --}}
+
+
+    <div class="w-full">
+        <div class="relative">
+            <div class="flex flex-col md:flex-row items-start md:items-center">
+                <!-- Adicionei 'items-start md:items-center' para alinhar verticalmente na tela -->
+                <div class="w-full md:w-4/12 px-4 mb-6 md:mb-0 ml-8">
+                    <div id="estorvo" class="flex-col text-white pb-40" style="width: 1000px; ">
+                        <span
+                            class="w-full flex-shrink-0 font-inter text-5xl font-semibold leading-normal bg-gradient-to-r from-purple-600 to-red-500 via-blue-400 bg-clip-text text-transparent">AVANÇOS
+                            TECNOLÓGICOS:</span>
+                        <p id="subtituloPrincipal" class="w-571 text-white font-inter text-3xl font-medium">OS IMPACTOS
+                            NO MERCADO DE TRABALHO</p>
+                    </div>
+                </div>
+                <div class="md:w-6/12 w-4/3 ml-auto">
+                    <div class="">
+                        <img id="imagemPrincipal" src="./imgs/mao.png" alt="" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- final do header --}}
+
+</section>
+
+<div class="flex flex-wrap justify-center mt-10">
+
+    <p></p>
+
+    <!-- card 1 -->
+    <div class="p-10 w-full max-w-md">
+        <div class="flex rounded-lg h-full bg-gray-100 p-10 flex-col">
+            <div class="flex items-center mb-3">
+                <h2 class="text-black text-lg font-medium">Robótica avançada</h2>
+                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center text-white flex-shrink-0 pl-10">
+                    <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                            height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <rect fill="#B9247E"
+                                    transform="translate(8.500000, 12.000000) rotate(-90.000000) translate(-8.500000, -12.000000) "
+                                    x="7.5" y="2" width="2" height="20" rx="1" />
+                                <path
+                                    d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z"
+                                    fill="#B9247E" fill-rule="nonzero"
+                                    transform="translate(14.99999 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) " />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="p-10 w-full max-w-md">
+        <div class="flex rounded-lg h-full bg-gray-100 p-10 flex-col">
+            <div class="flex items-center mb-3">
+                <h2 class="text-black text-lg font-medium">Processo de uberização</h2>
+                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center text-white flex-shrink-0 pl-10">
+                    <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                            height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <rect fill="#B9247E"
+                                    transform="translate(8.500000, 12.000000) rotate(-90.000000) translate(-8.500000, -12.000000) "
+                                    x="7.5" y="2" width="2" height="20" rx="1" />
+                                <path
+                                    d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z"
+                                    fill="#B9247E" fill-rule="nonzero"
+                                    transform="translate(14.99999 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) " />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="p-10 w-full max-w-md hover:text-blue-600 rounded">
+        <div class="flex rounded-lg h-full bg-gray-100 p-10 flex-col">
+            <div class="flex items-center mb-3">
+                <h2 class="text-black text-lg font-medium">Automação de processos</h2>
+                <div class="w-8 h-8 mr-3 inline-flex items-center justify-center text-white flex-shrink-0 pl-10">
+                    <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                            height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <polygon points="0 0 24 0 24 24 0 24" />
+                                <rect fill="#B9247E"
+                                    transform="translate(8.500000, 12.000000) rotate(-90.000000) translate(-8.500000, -12.000000) "
+                                    x="7.5" y="2" width="2" height="20" rx="1" />
+                                <path
+                                    d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z"
+                                    fill="#B9247E" fill-rule="nonzero"
+                                    transform="translate(14.99999 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997) " />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</html>

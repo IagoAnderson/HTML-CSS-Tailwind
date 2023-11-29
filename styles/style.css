@@ -1,0 +1,29 @@
+/*            PADRÃO            */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('ttf'),
+    url('../fonts/Inter-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+/* @media(min-width: 1600px){
+  body{
+    display: none
+  }
+} */
